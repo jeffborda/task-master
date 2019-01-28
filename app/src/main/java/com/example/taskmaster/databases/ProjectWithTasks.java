@@ -10,6 +10,6 @@ public class ProjectWithTasks {
     @Embedded
     public Project project;
 
-    @Relation(parentColumn = "projectId", entityColumn = "userId", entity = Task.class)
+    @Relation(parentColumn = "projectId", entityColumn = "taskId", entity = Task.class)
     public List<Task> tasks;
 }

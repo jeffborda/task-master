@@ -18,6 +18,11 @@ android {
     }
 }
 
+
+configurations {
+    all*.exclude group: 'com.google.guava', module: 'listenablefuture'
+}
+
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.1.0-alpha01'
@@ -26,8 +31,18 @@ dependencies {
     androidTestImplementation 'androidx.test:runner:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
-    // Room dependencies 
+    // ~~~~~~~~ ROOM DATABASE DEPENDENCIES ~~~~~~~~~~~~~~~
     def room_version = "1.1.1"
+
     implementation 'androidx.room:room-runtime:2.1.0-alpha03'
     annotationProcessor 'androidx.room:room-compiler:2.1.0-alpha03' // use kapt for Kotlin
+
+    // optional - RxJava support for Room
+    implementation 'androidx.room:room-rxjava2:2.1.0-alpha03'
+
+    // optional - Guava support for Room, including Optional and ListenableFuture
+    implementation 'androidx.room:room-guava:2.1.0-alpha03'
+
+    // Test helpers
+    testImplementation 'androidx.room:room-testing:2.1.0-alpha03'
 }
