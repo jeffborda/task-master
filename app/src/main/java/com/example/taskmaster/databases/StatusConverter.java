@@ -1,12 +1,11 @@
-package com.example.taskmaster;
+package com.example.taskmaster.databases;
 
 import androidx.room.TypeConverter;
-import androidx.room.TypeConverters;
 
-import static com.example.taskmaster.Task.Status.ACCEPTED;
-import static com.example.taskmaster.Task.Status.ASSIGNED;
-import static com.example.taskmaster.Task.Status.AVAILABLE;
-import static com.example.taskmaster.Task.Status.COMPLETED;
+import static com.example.taskmaster.databases.Task.Status.ACCEPTED;
+import static com.example.taskmaster.databases.Task.Status.ASSIGNED;
+import static com.example.taskmaster.databases.Task.Status.AVAILABLE;
+import static com.example.taskmaster.databases.Task.Status.COMPLETED;
 
 public class StatusConverter {
 
