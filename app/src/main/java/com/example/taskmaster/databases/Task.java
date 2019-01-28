@@ -1,17 +1,18 @@
 package com.example.taskmaster.databases;
 
 import androidx.room.Entity;
+import androidx.room.ForeignKey;
 import androidx.room.PrimaryKey;
 import androidx.room.TypeConverters;
 
 @Entity(tableName = "task")
 public class Task {
     @PrimaryKey(autoGenerate = true)
-    public Long id;
+    public long taskId;
+    public long projectId;
     public String title;
     @TypeConverters(StatusConverter.class)
     public Status status;
-    public Project project;
 
     // Default constructor
     public Task() {}

@@ -12,7 +12,7 @@ public interface ProjectDao {
     @Query("SELECT * FROM project")
     List<Project> getAll();
 
-    @Query("SELECT * FROM project WHERE id=:id")
+    @Query("SELECT * FROM project WHERE projectId=:id")
     Project fetchProjectById(int id);
 
     @Insert

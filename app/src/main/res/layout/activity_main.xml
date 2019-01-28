@@ -15,9 +15,9 @@
         tools:layout_editor_absoluteX="8dp">
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/button_goto_create_project"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="@string/button_goto_new_project" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

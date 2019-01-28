@@ -5,7 +5,9 @@
     <string name="button_goto_new_project">Create a Project</string>
 
 
-    <!-- New Activity -->
+    <!-- Create Project Activity -->
+    <string name="create_project_title_hint">Title</string>
+
     <!-- New Activity -->
     <!-- New Activity -->
 

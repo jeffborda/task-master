@@ -12,7 +12,7 @@ public interface TaskDao {
     @Query("SELECT * FROM task")
     List<Task> getAll();
 
-    @Query("SELECT * FROM task WHERE id=:id")
+    @Query("SELECT * FROM task WHERE taskId=:id")
     Project fetchTaskById(int id);
 
     @Insert
