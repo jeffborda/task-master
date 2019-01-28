@@ -3,7 +3,11 @@
 You know you have something that needs to get done... only problem is, you don't remember what it is.  This isn't Harry Potter, there's no magic spell.  Luck for you, Task Master is here to help.  Rendering memory obsolete since 2019, Task Master will track all your tasks to completion, allow users to assign them, and let you know when they have been completed.
 
 
-## Features
+## Lab 40
+* Set up classes for Project and Task
+* Created Daos for Project and Task
+* Created a button in MainActivity to go to Create Project
+* Working on Create Project Activity, where a user can enter a new Project
 
 
 ## Database Structure
