@@ -2,6 +2,10 @@
 
 You know you have something that needs to get done... only problem is, you don't remember what it is.  This isn't Harry Potter, there's no magic spell.  Luck for you, Task Master is here to help.  Rendering memory obsolete since 2019, Task Master will track all your tasks to completion, allow users to assign them, and let you know when they have been completed.
 
+## Lab 41
+* Added Firebase
+* Created login capability with email and Google account
+
 
 ## Lab 40
 * Set up classes for Project and Task

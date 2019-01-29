@@ -9,15 +9,25 @@
     <LinearLayout
         android:layout_width="368dp"
         android:layout_height="216dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="288dp"
+        android:layout_marginEnd="8dp"
         android:orientation="vertical"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="8dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/button_goto_create_project"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/button_goto_new_project" />
+
+        <Button
+            android:id="@+id/button_sign_in"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSignInButtonPressed"
+            android:text="Sign In" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
