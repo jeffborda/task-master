@@ -23,9 +23,9 @@ android {
 }
 
 
-//configurations {
-//    all*.exclude group: 'com.google.guava', module: 'listenablefuture'
-//}
+configurations {
+    all*.exclude group: 'com.google.guava', module: 'listenablefuture'
+}
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -36,22 +36,12 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
 
 
-
-    // ~~~~~~~~ ROOM DATABASE DEPENDENCIES ~~~~~~~~~~~~~~~
-    def room_version = "2.1.0-alpha03"
-
-    implementation "androidx.room:room-runtime:$room_version"
-    annotationProcessor "androidx.room:room-compiler:$room_version" // use kapt for Kotlin
-
-    // optional - RxJava support for Room
-    implementation "androidx.room:room-rxjava2:$room_version"
-
-    // optional - Guava support for Room, including Optional and ListenableFuture
-    implementation "androidx.room:room-guava:$room_version"
-
-    // optional - Coroutines support for Room
-    implementation "androidx.room:room-coroutines:$room_version"
-
-    // Test helpers
-    testImplementation "androidx.room:room-testing:$room_version"
+    //:::::::::::::::::::::::::::: FIREBASE ::::::::::::::::::::::::::::::::::::::::
+    // Firebase Core
+    implementation 'com.google.firebase:firebase-core:16.0.1'
+    // Firebase Authentication
+    implementation 'com.firebaseui:firebase-ui-auth:4.1.0'
 }
+
+// Firebase
+apply plugin: 'com.google.gms.google-services'
