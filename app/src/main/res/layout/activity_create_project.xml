@@ -8,27 +8,44 @@
 
     <LinearLayout
         android:layout_width="368dp"
-        android:layout_height="407dp"
+        android:layout_height="155dp"
+        android:layout_marginBottom="8dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="8dp">
+        app:layout_constraintStart_toStartOf="parent">
 
         <EditText
             android:id="@+id/create_project_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:hint="@strings/create_project_title_hint"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Title"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/create_project_description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="Description"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/button_add_project"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="addNewProject"
+            android:text="Add Project" />
     </LinearLayout>
+
+    <TextView
+        android:id="@+id/create_project_success_text"
+        android:layout_width="306dp"
+        android:layout_height="231dp"
+        android:layout_marginTop="16dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

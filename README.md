@@ -5,6 +5,7 @@ You know you have something that needs to get done... only problem is, you don't
 ## Lab 41
 * Added Firebase
 * Created login capability with email and Google account
+* Created Database
 
 
 ## Lab 40

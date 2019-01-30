@@ -1,7 +1,7 @@
-package com.example.taskmaster.databases;
+package com.example.taskmaster.models;
 
 public class Task {
-    public long taskId;
+    public String id;
     public long projectId;
     public String title;
     public String status;
