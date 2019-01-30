@@ -40,7 +40,8 @@ dependencies {
     implementation 'com.google.firebase:firebase-core:16.0.6'
     // Firebase Authentication
     implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
-    //implementation 'com.google.firebase:firebase-auth:16.0.1:15.0.0'
+    // Firebase Firestore Databse
+    implementation 'com.google.firebase:firebase-firestore:17.1.5'
 }
 
 // Firebase

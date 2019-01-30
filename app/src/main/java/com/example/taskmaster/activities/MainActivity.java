@@ -17,7 +17,6 @@ import java.util.Arrays;
 import java.util.List;
 
 
-
 public class MainActivity extends AppCompatActivity {
 
     private static final int RC_SIGN_IN = 3742;
@@ -30,9 +29,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    protected void goToCreateProject(View v) {
-        Intent exerciseDiaryIntent = new Intent(this, CreateProject.class);
-        startActivity(exerciseDiaryIntent);
+    public void goToCreateProject(View v) {
+        Intent createProjectIntent = new Intent(this, CreateProject.class);
+        startActivity(createProjectIntent);
+    }
+
+    public void goToViewAllProjects() {
+
     }
 
     protected void onSignInButtonPressed(View v) {
@@ -40,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
                 new AuthUI.IdpConfig.EmailBuilder().build(),
                 new AuthUI.IdpConfig.GoogleBuilder().build());
 
-// Create and launch sign-in intent
+        // Create and launch sign-in intent
         startActivityForResult(
                 AuthUI.getInstance()
                         .createSignInIntentBuilder()
@@ -67,6 +70,7 @@ public class MainActivity extends AppCompatActivity {
 
                 // ...
             } else {
+                // TODO: Do something foe failed login attempt
                 // Sign in failed. If response is null the user canceled the
                 // sign-in flow using the back button. Otherwise check
                 // response.getError().getErrorCode() and handle the error.
