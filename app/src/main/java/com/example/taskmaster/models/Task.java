@@ -1,4 +1,4 @@
-package com.example.taskmaster.databases;
+package com.example.taskmaster.models;
 
 public class Task {
     public String id;

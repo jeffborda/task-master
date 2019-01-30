@@ -34,8 +34,9 @@ public class MainActivity extends AppCompatActivity {
         startActivity(createProjectIntent);
     }
 
-    public void goToViewAllProjects() {
-
+    public void goToViewAllProjects(View v) {
+        Intent goToViewProjectsIntent = new Intent(this, ViewProjects.class);
+        startActivity(goToViewProjectsIntent);
     }
 
     protected void onSignInButtonPressed(View v) {
