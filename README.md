@@ -43,3 +43,4 @@ You know you have something that needs to get done... only problem is, you don't
 
 * [Create enums in Room database](https://stackoverflow.com/questions/44498616/android-architecture-components-using-enums)
 * [Modeling One to Many with Rooms](https://stackoverflow.com/questions/44330452/android-persistence-room-cannot-figure-out-how-to-read-this-field-from-a-curso/44424148#44424148)
+* [Separating an onClick listener to separate class](https://stackoverflow.com/questions/13485918/android-onclick-listener-in-a-separate-class)

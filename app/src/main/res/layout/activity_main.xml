@@ -36,7 +36,7 @@
             android:id="@+id/button_goto_view_projects"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button"
-            tools:text="View Projects" />
+            android:onClick="goToViewAllProjects"
+            android:text="View Projects" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
